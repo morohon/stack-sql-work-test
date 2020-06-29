@@ -18,7 +18,6 @@ BEGIN
 
 	SELECT @ResultVar = SUM(oi.price) FROM cte c INNER JOIN OrderItems oi ON c.row_id = oi.order_id;
 
-	-- Return the result of the function
 	RETURN @ResultVar
 
 END
